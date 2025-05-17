@@ -25,8 +25,8 @@ I chose this game to practice **DOM manipulation, JavaScript logic, and dynamic 
 - Use the **Restart Game** button to play again.
 
 ### ▶ Play the Game
-Open `index.html` in your browser to start playing locally.
-
+### ▶ Play the Game (Deployed Link)
+[Click here to play the game](https://danielsangronis1386.github.io/spaceman-game/)
 ### ▶ Planning Materials
 - Pseudocode: See `planning.txt` (optional if you submitted a separate file or document).
 - Wireframe: See image in your deliverables (or replace this line if you used one).
