@@ -2,7 +2,7 @@
 
 
 ## 📸 Screenshot/Logo
-![Spaceman Game Screenshot](screenshot.png)
+![Spaceman Game Screenshot](Screenshot.png)
 
 
 ---
