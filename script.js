@@ -41,7 +41,8 @@ function updateDisplay() {
         displayWord += correctGuesses.includes(letter) ? letter + " " : "_ ";
     }
     wordDiv.textContent = displayWord.trim();
-    guessedDiv.textContent = "Wrong guesses: " + wrongGuesses.join(", ");
+    guessedDiv.textContent = "Wrong guesses: " + wrongGuesses.join(", ") +
+                             `  |  Remaining guesses: ${maxWrongGuesses - wrongGuesses.length}`
 }
 function checkGameOver() {
     if (secretWord.split('').every(letter => correctGuesses.includes(letter))) {
