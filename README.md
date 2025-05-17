@@ -1,26 +1,54 @@
 # 🚀 Spaceman Game
 
-A simple space-themed guessing game where you must guess the secret word to save the astronaut from being lost in space.
+## 📸 Screenshot/Logo
+![Spaceman Game Screenshot](space-bg.jpg)
 
+---
 
-## How to Play
+## 🎮 Game Description
+Spaceman Game is a simple browser-based word guessing game with a space theme.  
+The player must guess the hidden space-related word by typing letters. Each wrong guess reduces the number of remaining attempts. The goal is to guess the word and save the astronaut from floating forever in space.
+
+I chose this game to practice **DOM manipulation, JavaScript logic, and dynamic UI updates in the browser**, while keeping it fun and engaging with a sci-fi theme.
+
+---
+
+## 🚀 Getting Started
+
+### ▶ How to Play
 - Type letters using your keyboard.
 - Each wrong guess will reduce your remaining guesses.
 - You have **6 wrong guesses** before the astronaut is lost in space.
 - A hint will appear to help you guess the word.
 - Use the **Restart Game** button to play again.
 
-## Technologies Used
+### ▶ Play the Game
+Open `index.html` in your browser to start playing locally.
+
+### ▶ Planning Materials
+- Pseudocode: See `planning.txt` (optional if you submitted a separate file or document).
+- Wireframe: See image in your deliverables (or replace this line if you used one).
+
+---
+
+## 👨‍💻 Technologies Used
 - HTML5
 - CSS3
 - JavaScript ES6
 
-## Project Structure
-spaceman-game
-astronaut.webp
-index.html
-README.md
-script.js
-space-bg.jpg
-style.css
+---
 
+## 🔗 Attributions
+- [Orbitron Font](https://fonts.google.com/specimen/Orbitron) (Only if you used it)
+- [Unsplash Space Background](https://unsplash.com/photos/1446776811953-b23d57bd21aa)  
+- [Astronaut PNG](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fpng%2F47307969-cute-astronaut-on-transparent-background&psig=AOvVaw3zt4WJqg5K5syp6Y2NOaTf&ust=1747533584296000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCND_n4u0qY0DFQAAAAAdAAAAABAE)  
+
+---
+
+## 🚀 Next Steps (Stretch Goals)
+- Add sound effects for correct and wrong guesses.
+- Add countdown timer and score tracker.
+- Improve animations and visuals.
+- Make it mobile-friendly.
+
+---

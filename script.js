@@ -5,25 +5,25 @@ const wordList = [
   { word: "GALAXY", hint: "Massive system of stars" },
   { word: "ASTRONAUT", hint: "Person trained to travel in space" }
 ]
-let secretWordObj = {};
-let secretWord = "";
-let correctGuesses = [];
-let wrongGuesses = [];
-const maxWrongGuesses = 6;
+let secretWordObj = {}
+let secretWord = ""
+let correctGuesses = []
+let wrongGuesses = []
+const maxWrongGuesses = 6
 
-const wordDiv = document.getElementById('word');
-const guessedDiv = document.getElementById('guessed-letters');
-const messageDiv = document.getElementById('message');
-const hintDiv = document.getElementById('hint');
+const wordDiv = document.getElementById('word')
+const guessedDiv = document.getElementById('guessed-letters')
+const messageDiv = document.getElementById('message')
+const hintDiv = document.getElementById('hint')
 
 function startGame() {
-    secretWordObj = wordList[Math.floor(Math.random() * wordList.length)];
+    secretWordObj = wordList[Math.floor(Math.random() * wordList.length)]
     secretWord = secretWordObj.word;
-    correctGuesses = [];
-    wrongGuesses = [];
-    messageDiv.textContent = "";
-    hintDiv.textContent = "Hint: " + secretWordObj.hint;
-    updateDisplay();
+    correctGuesses = []
+    wrongGuesses = []
+    messageDiv.textContent = ""
+    hintDiv.textContent = "Hint: " + secretWordObj.hint
+    updateDisplay()
 }
 
 function updateDisplay() {
@@ -36,9 +36,9 @@ function updateDisplay() {
 }
 
 function updateDisplay() {
-    let displayWord = "";
+    let displayWord = ""
     for (let letter of secretWord) {
-        displayWord += correctGuesses.includes(letter) ? letter + " " : "_ ";
+        displayWord += correctGuesses.includes(letter) ? letter + " " : "_ "
     }
     wordDiv.textContent = displayWord.trim();
     guessedDiv.textContent = "Wrong guesses: " + wrongGuesses.join(", ") +
@@ -49,7 +49,7 @@ function checkGameOver() {
         messageDiv.textContent = "🎉 YOU WIN!";
         document.removeEventListener('keydown', handleKey);
     } else if (wrongGuesses.length >= maxWrongGuesses) {
-        messageDiv.textContent = `💀 YOU LOSE! The word was: ${secretWord}`;
+        messageDiv.textContent = `💀 YOU LOSE! The word was: ${secretWord}`
         document.removeEventListener('keydown', handleKey);
     }
 }
@@ -58,8 +58,8 @@ function handleKey(event) {
     if (!/^[A-Z]$/.test(letter)) return;
 
     if (correctGuesses.includes(letter) || wrongGuesses.includes(letter)) {
-        messageDiv.textContent = "You already guessed that letter!";
-        return;
+        messageDiv.textContent = "You already guessed that letter!"
+        return
     }
 
     if (secretWord.includes(letter)) {
@@ -68,13 +68,13 @@ function handleKey(event) {
         wrongGuesses.push(letter);
     }
 
-    updateDisplay();
-    checkGameOver();
+    updateDisplay()
+    checkGameOver()
 }
 
 function restartGame() {
     document.addEventListener('keydown', handleKey);
-    startGame();
+    startGame()
 }
 
 restartGame();
