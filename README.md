@@ -1,7 +1,9 @@
 # 🚀 Spaceman Game
 
+
 ## 📸 Screenshot/Logo
-![Spaceman Game Screenshot](space-bg.jpg)
+![Spaceman Game Screenshot](screenshot.png)
+
 
 ---
 
@@ -39,9 +41,10 @@ Open `index.html` in your browser to start playing locally.
 ---
 
 ## 🔗 Attributions
-- [Orbitron Font](https://fonts.google.com/specimen/Orbitron) (Only if you used it)
-- [Unsplash Space Background](https://unsplash.com/photos/1446776811953-b23d57bd21aa)  
+ 
 - [Astronaut PNG](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fpng%2F47307969-cute-astronaut-on-transparent-background&psig=AOvVaw3zt4WJqg5K5syp6Y2NOaTf&ust=1747533584296000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCND_n4u0qY0DFQAAAAAdAAAAABAE)  
+- [space-bg.jpg] (https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/116/exepeso0939a.jpg?w=916&h=563&fit=clip&crop=faces%2Cfocalpoint)
+
 
 ---
 
